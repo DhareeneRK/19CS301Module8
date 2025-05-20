@@ -1,40 +1,42 @@
 # 19CS301Module8
 EXPTNO.8a Program to find Find the simple interest
 
-### Aim: To Write a Python Program to find Find the simple interest by getting the principal, rate and time value from the user
-### Algorithm:
+### Aim:
+To Write a python program to read the marks of three subjects from the users and calculate the total and percentage for that particular student.
+
+###Algorithm
 
 STEP 1: Start.
 
 STEP 2: Define a function.
 
-STEP 3: Create variable 'p','r','t' for principal,rate of interest and time. STEP 4: Get the input of p,r and t from user.
+STEP 3: Create variable 'm1','m2','m3' for marks. 
+STEP 4: Get the input of m1,m2 and m3 from user.
 
-STEP 5 : Using the formula (p*r*t)/100 calculate the result. STEP 6: Print the result.
+STEP 5 : Using the formula (m1+m2+m3)/3 calculate the result. 
+
+STEP 6: Print the result.
 
 STEP 7: Stop.
 
 ### Program:
 ```
-def simpleInterest(p,t,r):
-      si = p*t*r/100
-       return si
-p = eval(input())
-r = eval(input())
-t = eval(input())
+m1,m2,m3=int(input()),int(input()),int(input())
+total=m1+m2+m3;
+percentage=(total/300)*100
+print("Total marks obtained is {} and the percentage obtained is {}".format(total,percentage))
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/0cc71222-9697-4545-a937-b330407cbc02)
+![image](https://github.com/gokulkrishnan2005/19CS301Module8/blob/main/26.png)
 
 
-
-
-
-### Result: Thus, the given program is implemented and executed successfully .
+### Result: 
+Thus, the given program is implemented and executed successfully .
 
 EXPTNo.8b program to display elements from a list, present at odd index positions
 
-### Aim: To Write a python program to display elements from a list, present at odd index positions
+### Aim:
+To Write a python program to display elements from a list, present at odd index positions
 ### Algorithm:
 
 STEP 1: Start.
@@ -67,11 +69,13 @@ odd(a)
 ### Output:
 ![image](https://github.com/user-attachments/assets/a13fba7c-36b5-4227-98c1-82ab22a7804a)
 
-### Result: Thus, the given program is implemented and executed successfully .
+### Result:
+Thus, the given program is implemented and executed successfully .
  
 
 EXPT NO>8C To Write a python program to Given the participants'	score sheet for your University Sports Day, you are required to find the runner-up score
-### Aim: To Write a python program to Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given scores. Store them 
+### Aim: 
+To Write a python program to Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given scores. Store them 
          in a list and find the score of the runner-up.
 
 
@@ -96,6 +100,7 @@ STEP 8: Stop.
           arr2 = list(set(arr))
           arr2.sort()
 print(arr2[-2])
+```
 
 ### Output:
  
@@ -103,12 +108,14 @@ print(arr2[-2])
 
  
 
-### Result: Thus, the given program is implemented and executed successfully .
+### Result:
+Thus, the given program is implemented and executed successfully .
  
 
 
 EX: 8.d program to square all the even numbers and cube all odd numbers from a list of integers
-### Aim: To Develop a python program to square all the even numbers and cube all odd numbers from a list of integers. Get the starting and ending range to create a list.
+### Aim: 
+To Develop a python program to square all the even numbers and cube all odd numbers from a list of integers. Get the starting and ending range to create a list.
 
 
 ### Algorithm:
@@ -140,6 +147,41 @@ f,l = int(input()),int(input())
 
 
 ### Result: Thus, the given program is implemented and executed successfully .
+
+EXPTNO.8e Program to find out whether given is a valid regex or not.
+### Aim:
+To Write a python program to  find out whether given is a valid regex or not.
+
+###Algorithm
+
+Takes an integer input n — number of regex patterns to check.
+
+For each input line, it checks whether the string is a valid regular expression.
+
+If it can be compiled using re.compile(), it prints "True".
+
+If it's invalid, it raises a re.error, and prints "False".
+
+
+### Program:
+```
+import re
+n=int(input())
+for i in range(n):
+    s=input()
+    try:
+        p=re.compile(s)
+        if p:
+            print("True")
+    except re.error:
+        print("False")
+```
+### Output:
+![image](https://github.com/gokulkrishnan2005/19CS301Module8/blob/main/module8%20ka%20image.png)
+
+
+### Result:
+Thus, the given program is implemented and executed successfully .
  
 
 
